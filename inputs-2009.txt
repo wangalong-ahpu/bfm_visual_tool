@@ -1,0 +1,7 @@
+D:\database\bfm\2009\model2009-publicmm1-bfm.h5
+46990 93322 199 
+68 D:\database\bfm\3DMM_model\landmark.anl
+1744.327628674942 1747.838275588676 800 600
+shape/model/mean shape/model/pcaVariance shape/model/pcaBasis
+color/model/mean color/model/pcaVariance color/model/pcaBasis
+shape/representer/cells

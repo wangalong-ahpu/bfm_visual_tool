@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\bfm_utils">
+      <UniqueIdentifier>{25edd51b-362b-4a6b-9a7d-0e9e529cf784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bfm_utils">
+      <UniqueIdentifier>{e3a26de8-9c79-4048-ba35-6f32fc783f62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{d651aced-2cda-412f-8f76-09bc94af38ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2DTo3D">
+      <UniqueIdentifier>{0147b6b4-81a5-49e9-a153-aed1a9e76a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2DTo3D">
+      <UniqueIdentifier>{927ad12a-f5be-4573-a250-0cc230eb893f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test">
+      <UniqueIdentifier>{1e00564d-cd49-49db-b0c6-e31ffdffac37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Fast_RNRR">
+      <UniqueIdentifier>{06005417-6aba-480e-9598-42204560a4c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Fast_RNRR">
+      <UniqueIdentifier>{a7919457-4dd0-4acf-a902-26c6912b7b42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MainWindow.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bfm.cpp">
+      <Filter>Source Files\bfm_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>Source Files\bfm_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\dlib\dlib-19.24\install\include\dlib\all\source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reconstruct.cpp">
+      <Filter>Source Files\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="DlibFaceDetect.cpp">
+      <Filter>Source Files\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="PointCoordinate.cpp">
+      <Filter>Source Files\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="WritePly.cpp">
+      <Filter>Source Files\2DTo3D</Filter>
+    </ClCompile>
+    <ClCompile Include="plyopengl.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Fast_RNRR\src\FastRNRR.cpp">
+      <Filter>Source Files\Fast_RNRR</Filter>
+    </ClCompile>
+    <ClCompile Include="Fast_RNRR\src\nodeSampler.cpp">
+      <Filter>Source Files\Fast_RNRR</Filter>
+    </ClCompile>
+    <ClCompile Include="Fast_RNRR\src\NonRigidreg.cpp">
+      <Filter>Source Files\Fast_RNRR</Filter>
+    </ClCompile>
+    <ClCompile Include="Fast_RNRR\src\Registration.cpp">
+      <Filter>Source Files\Fast_RNRR</Filter>
+    </ClCompile>
+    <ClCompile Include="Fast_RNRR\src\tools.cpp">
+      <Filter>Source Files\Fast_RNRR</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="OpenGLWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CameraWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bfm.h">
+      <Filter>Header Files\bfm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="constant.h">
+      <Filter>Header Files\bfm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>Header Files\bfm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>Header Files\bfm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="vec.h">
+      <Filter>Header Files\bfm_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Header Files\2DTo3D</Filter>
+    </ClInclude>
+    <ClInclude Include="PointCoordinate.h">
+      <Filter>Header Files\2DTo3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\geodesic_algorithm_base.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\geodesic_algorithm_exact.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\geodesic_algorithm_exact_elements.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\geodesic_constants_and_simple_functions.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\geodesic_memory.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\io_mesh.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\median.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\nanoflann.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\nanoflann.hpp">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\nodeSampler.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\NonRigidreg.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\OmpHelper.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\Registration.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\tools.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+    <ClInclude Include="Fast_RNRR\include\Types.h">
+      <Filter>Header Files\Fast_RNRR</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

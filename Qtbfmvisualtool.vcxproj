@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FBFF573-AEE4-4A65-9A3C-0CC84D120976}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <ProjectName>bfm_visual_tool</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.9.9_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets;multimedia;multimediawidgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.9.9_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets;multimedia;multimediawidgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VS_Project\source\repos\bfm_visual_tool\Fast_RNRR\include;D:\OpenMesh 8.1\include;D:\eigen-3.3.9;D:\opencv\build\include;D:\boost_1_74_0;D:\OpenSSL-Win64\x64\include;D:\Eos_1\eos\include;D:\Eos_1\eos\3rdparty\toml11;D:\Eos_1\eos\3rdparty\eigen3-nnls\src;D:\Eos_1\eos\3rdparty\nanoflann\include;D:\Eos_1\eos\3rdparty\glm;D:\Eos_1\eos\3rdparty\eigen;D:\Eos_1\eos\3rdparty\cereal\include;D:\dlib\dlib-19.24;D:\vcpkg\packages\jsoncpp_x64-windows\include;D:\curl\builds\libcurl-vc10debug;D:\curl\builds\libcurl-vc14-x64-release-static-ipv6-sspi-schannel\include;D:\dlib\dlib-19.24\install\include\dlib\external\zlib;D:\dlib\dlib-19.24\install\include;D:\HDF5\HDF5\include;D:\HDF5\HDF5\include\cpp;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtWidgets;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtOpenGLExtensions;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtOpenGL;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtANGLE;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtGui;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\include\QtCore;.\;$(IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_UNICODE;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_OPENGL_LIB;QT_OPENGLEXTENSIONS_LIB;QT_WIDGETS_LIB;H5_BUILT_AS_DYNAMIC_LIB;CURL_STATICLIB
+;WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;BOOST_ALL_DYN_LINK;_HAS_AUTO_PTR_ETC;CMAKE_INTDIR="Debug";_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj  /wd4996 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\OpenMesh 8.1\lib;D:\dlib\dlib-19.24\install\lib;D:\dlib\dlib-19.24\install\include\dlib;D:\dlib\dlib-19.24\build1\Debug;D:\vcpkg\packages\jsoncpp_x64-windows\lib;D:\OpenSSL-Win64\x64\lib;D:\HDF5\HDF5\lib\vc11\x64\debug;D:\Qt\Qt5.9.9\5.9.9\msvc2017_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenMeshCored.lib;OpenMeshToolsd.lib;dlib19.24.0_debug_64bit_msvc1929.lib;D:\dlib\dlib-19.24\install\lib\dlib19.24.0_debug_64bit_msvc1929.lib;D:\opencv\build\x64\vc16\lib\opencv_world470d.lib;D:\boost_1_74_0\lib64-msvc-14.2\boost_system-vc142-mt-x64-1_74.lib;D:\boost_1_74_0\lib64-msvc-14.2\boost_filesystem-vc142-mt-x64-1_74.lib;D:\boost_1_74_0\lib64-msvc-14.2\boost_program_options-vc142-mt-x64-1_74.lib;hdf5_D.lib;hdf5_cpp_D.lib;hdf5_hl_D.lib;hdf5_hl_cpp_D.lib;Ws2_32.lib;gdi32.lib;comctl32.lib;user32.lib;imm32.lib;winmm.lib;opengl32.lib;jsoncpp.lib;Wldap32.lib;Crypt32.lib;Normaliz.lib;kernel32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;Qt5OpenGLExtensionsd.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\dlib\dlib-19.24\install\include\dlib\all\source.cpp" />
+    <ClCompile Include="CameraWidget.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="DlibFaceDetect.cpp" />
+    <ClCompile Include="Fast_RNRR\src\FastRNRR.cpp" />
+    <ClCompile Include="Fast_RNRR\src\nodeSampler.cpp" />
+    <ClCompile Include="Fast_RNRR\src\NonRigidreg.cpp" />
+    <ClCompile Include="Fast_RNRR\src\Registration.cpp" />
+    <ClCompile Include="Fast_RNRR\src\tools.cpp" />
+    <ClCompile Include="OpenGLWidget.cpp" />
+    <ClCompile Include="plyopengl.cpp" />
+    <ClCompile Include="PointCoordinate.cpp" />
+    <ClCompile Include="random.cpp" />
+    <ClCompile Include="Reconstruct.cpp" />
+    <ClCompile Include="WritePly.cpp" />
+    <QtRcc Include="MainWindow.qrc" />
+    <QtUic Include="MainWindow.ui" />
+    <QtMoc Include="MainWindow.h" />
+    <ClCompile Include="bfm.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="OpenGLWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bfm.h" />
+    <QtMoc Include="CameraWidget.h" />
+    <ClInclude Include="constant.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="Fast_RNRR\include\geodesic_algorithm_base.h" />
+    <ClInclude Include="Fast_RNRR\include\geodesic_algorithm_exact.h" />
+    <ClInclude Include="Fast_RNRR\include\geodesic_algorithm_exact_elements.h" />
+    <ClInclude Include="Fast_RNRR\include\geodesic_constants_and_simple_functions.h" />
+    <ClInclude Include="Fast_RNRR\include\geodesic_memory.h" />
+    <ClInclude Include="Fast_RNRR\include\io_mesh.h" />
+    <ClInclude Include="Fast_RNRR\include\median.h" />
+    <ClInclude Include="Fast_RNRR\include\nanoflann.h" />
+    <ClInclude Include="Fast_RNRR\include\nanoflann.hpp" />
+    <ClInclude Include="Fast_RNRR\include\nodeSampler.h" />
+    <ClInclude Include="Fast_RNRR\include\NonRigidreg.h" />
+    <ClInclude Include="Fast_RNRR\include\OmpHelper.h" />
+    <ClInclude Include="Fast_RNRR\include\Registration.h" />
+    <ClInclude Include="Fast_RNRR\include\tools.h" />
+    <ClInclude Include="Fast_RNRR\include\Types.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="PointCoordinate.h" />
+    <ClInclude Include="random.h" />
+    <ClInclude Include="vec.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

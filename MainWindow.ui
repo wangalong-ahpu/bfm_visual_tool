@@ -1,0 +1,1713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1231</width>
+    <height>869</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777</width>
+    <height>16777</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MVIC医疗</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>791</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 宋体 Std L</family>
+      <pointsize>12</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 12pt &quot;Adobe 宋体 Std L&quot;;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="icon">
+      <iconset resource="MainWindow.qrc">
+       <normaloff>:/new/prefix1/images/add.png</normaloff>:/new/prefix1/images/add.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>输入</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>781</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 25 12pt &quot;Adobe 宋体 Std L&quot;;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/pic.png</normaloff>:/new/prefix1/images/pic.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>图片建模</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_2dto3d">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>620</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(252, 128, 128, 80), stop:0.0227273 rgba(255, 188, 188, 80), stop:0.0340909 rgba(255, 132, 132, 156), stop:0.0511364 rgba(255, 255, 255, 0));</string>
+        </property>
+        <property name="text">
+         <string>开始建模</string>
+        </property>
+        <property name="icon">
+         <iconset resource="MainWindow.qrc">
+          <normaloff>:/new/prefix1/images/begin.png</normaloff>:/new/prefix1/images/begin.png</iconset>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>731</width>
+          <height>215</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>正面人脸（必要）</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>60</y>
+           <width>115</width>
+           <height>112</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_openfile">
+            <property name="text">
+             <string>载入图片</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/open.png</normaloff>:/new/prefix1/images/open.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_open2dcam">
+            <property name="text">
+             <string>打开相机</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/cam.png</normaloff>:/new/prefix1/images/cam.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_inputcancel">
+            <property name="text">
+             <string>取消</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/cancel.png</normaloff>:/new/prefix1/images/cancel.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>40</y>
+           <width>121</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 85, 0);</string>
+         </property>
+         <property name="text">
+          <string>没有载入</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>40</y>
+           <width>121</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/images/katong.png);
+font: 16pt &quot;Adobe 黑体 Std R&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>样     例</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>321</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="MainWindow.qrc">:/new/prefix1/images/tishi2.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>621</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>欢迎使用照片建模功能</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>380</y>
+          <width>731</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>侧面人脸（辅助）</string>
+        </property>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>20</y>
+           <width>121</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>左侧面</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>20</y>
+           <width>121</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>右侧面</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>40</y>
+           <width>115</width>
+           <height>112</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="pushButton_openfile_2">
+            <property name="text">
+             <string>载入图片</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/open.png</normaloff>:/new/prefix1/images/open.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_open2dcam_2">
+            <property name="text">
+             <string>打开相机</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/cam.png</normaloff>:/new/prefix1/images/cam.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_inputcancel_2">
+            <property name="text">
+             <string>取消</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/cancel.png</normaloff>:/new/prefix1/images/cancel.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>40</y>
+           <width>115</width>
+           <height>112</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pushButton_openfile_3">
+            <property name="text">
+             <string>载入图片</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/open.png</normaloff>:/new/prefix1/images/open.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_open2dcam_3">
+            <property name="text">
+             <string>打开相机</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/cam.png</normaloff>:/new/prefix1/images/cam.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_inputcancel_3">
+            <property name="text">
+             <string>取消</string>
+            </property>
+            <property name="icon">
+             <iconset resource="MainWindow.qrc">
+              <normaloff>:/new/prefix1/images/cancel.png</normaloff>:/new/prefix1/images/cancel.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>620</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+        <property name="textDirection">
+         <enum>QProgressBar::TopToBottom</enum>
+        </property>
+       </widget>
+       <zorder>progressBar</zorder>
+       <zorder>pushButton_2dto3d</zorder>
+       <zorder>groupBox_3</zorder>
+       <zorder>label_19</zorder>
+       <zorder>groupBox_4</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/cam2.png</normaloff>:/new/prefix1/images/cam2.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>扫描仪建模</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>280</y>
+          <width>231</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton_open3dcam">
+           <property name="text">
+            <string>打开三维扫描仪</string>
+           </property>
+           <property name="icon">
+            <iconset resource="MainWindow.qrc">
+             <normaloff>:/new/prefix1/images/cam2.png</normaloff>:/new/prefix1/images/cam2.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_openmodel">
+           <property name="text">
+            <string>导入模型文件</string>
+           </property>
+           <property name="icon">
+            <iconset resource="MainWindow.qrc">
+             <normaloff>:/new/prefix1/images/pc.png</normaloff>:/new/prefix1/images/pc.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_optimizemodel">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>510</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(252, 128, 128, 80), stop:0.0227273 rgba(255, 188, 188, 80), stop:0.0340909 rgba(255, 132, 132, 156), stop:0.0511364 rgba(255, 255, 255, 0));</string>
+        </property>
+        <property name="text">
+         <string>优化模型</string>
+        </property>
+        <property name="icon">
+         <iconset resource="MainWindow.qrc">
+          <normaloff>:/new/prefix1/images/begin.png</normaloff>:/new/prefix1/images/begin.png</iconset>
+        </property>
+       </widget>
+       <widget class="QProgressBar" name="progressBar_2">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>510</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+        <property name="textDirection">
+         <enum>QProgressBar::TopToBottom</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>60</y>
+          <width>621</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>欢迎使用扫描仪建模功能</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>progressBar_2</zorder>
+       <zorder>verticalLayoutWidget_2</zorder>
+       <zorder>pushButton_optimizemodel</zorder>
+       <zorder>label_24</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="icon">
+      <iconset resource="MainWindow.qrc">
+       <normaloff>:/new/prefix1/images/change.png</normaloff>:/new/prefix1/images/change.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>变形</string>
+     </attribute>
+     <widget class="QToolBox" name="toolBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>771</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>额头</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>761</width>
+          <height>190</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>额头中</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="horizontalSlider">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>额头侧</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSlider" name="horizontalSlider_2">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>上颌</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSlider" name="horizontalSlider_3">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>下颌</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSlider" name="horizontalSlider_4">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>下巴</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSlider" name="horizontalSlider_5">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>面颊</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>眉部</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>眼部</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>771</width>
+         <height>307</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>鼻部</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>761</width>
+          <height>190</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="text">
+            <string>鼻梁</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="horizontalSlider_6">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="text">
+            <string>鼻翼</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSlider" name="horizontalSlider_7">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="text">
+            <string>鼻尖</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSlider" name="horizontalSlider_8">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="text">
+            <string>鼻背</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSlider" name="horizontalSlider_10">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_9">
+           <property name="text">
+            <string>鼻根</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSlider" name="horizontalSlider_9">
+           <property name="value">
+            <number>50</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>唇部</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>下颚</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>颈部</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_plastic">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>632</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="icon">
+      <iconset resource="MainWindow.qrc">
+       <normaloff>:/new/prefix1/images/gen.png</normaloff>:/new/prefix1/images/gen.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>自动生成</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>751</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>设置参数</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>731</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>shape PC 值：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>No.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="shapeComboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="shapeSlider">
+          <property name="minimum">
+           <number>-1000</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>max</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="setShapePcBtn">
+          <property name="text">
+           <string>确定</string>
+          </property>
+          <property name="icon">
+           <iconset resource="MainWindow.qrc">
+            <normaloff>:/new/prefix1/images/yes.png</normaloff>:/new/prefix1/images/yes.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>731</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>texture PC 值：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>No.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="texComboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="texSlider">
+          <property name="minimum">
+           <number>-1000</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>max</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="setTexPcBtn">
+          <property name="text">
+           <string>确定</string>
+          </property>
+          <property name="icon">
+           <iconset resource="MainWindow.qrc">
+            <normaloff>:/new/prefix1/images/yes.png</normaloff>:/new/prefix1/images/yes.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>731</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>expression PC 值：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>No.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="exprComboBox"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="exprSlider">
+          <property name="minimum">
+           <number>-1000</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>max</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="setExprPcBtn">
+          <property name="text">
+           <string>确定</string>
+          </property>
+          <property name="icon">
+           <iconset resource="MainWindow.qrc">
+            <normaloff>:/new/prefix1/images/yes.png</normaloff>:/new/prefix1/images/yes.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>731</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="rndRangeLayout">
+       <item>
+        <widget class="QLabel" name="rndRangeLabel">
+         <property name="text">
+          <string>随机生成范围</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="rndRangeSlider">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="pageStep">
+          <number>2</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>max</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="genRndFaceBtn">
+         <property name="text">
+          <string>生成随机人脸</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_meanface">
+         <property name="text">
+          <string>生成平均人脸</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>390</y>
+        <width>751</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>保存</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>10</y>
+         <width>681</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>文件名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="saveFilename">
+          <property name="maximumSize">
+           <size>
+            <width>236</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Adobe 宋体 Std L'; font-size:12pt; font-weight:24; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400;&quot;&gt;rnd_face.ply&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="savePlyBtn">
+          <property name="text">
+           <string>保存</string>
+          </property>
+          <property name="icon">
+           <iconset resource="MainWindow.qrc">
+            <normaloff>:/new/prefix1/images/save.png</normaloff>:/new/prefix1/images/save.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="OpenGLWidget" name="openGLWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>341</width>
+      <height>310</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>391</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Adobe 黑体 Std R&quot;;</string>
+    </property>
+    <property name="title">
+     <string>消息框</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>371</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe 黑体 Std R</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>false</bool>
+     </property>
+     <property name="documentTitle">
+      <string/>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="MainWindow.qrc">:/new/prefix1/images/message.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="OpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>341</width>
+      <height>310</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>51</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string>变
+形
+后</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>51</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 黑体 Std R</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string>变
+形
+前</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>279</y>
+      <width>295</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="pushButton_plus_1">
+       <property name="text">
+        <string> 放大</string>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/plus.png</normaloff>:/new/prefix1/images/plus.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>100</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>50</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_minus_1">
+       <property name="text">
+        <string>缩小</string>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/minus.png</normaloff>:/new/prefix1/images/minus.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_deleteGL_1">
+       <property name="text">
+        <string>清除</string>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/delete.png</normaloff>:/new/prefix1/images/delete.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>600</y>
+      <width>295</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QPushButton" name="pushButton_plus_2">
+       <property name="text">
+        <string> 放大</string>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/plus.png</normaloff>:/new/prefix1/images/plus.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>100</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>50</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_minus_2">
+       <property name="text">
+        <string>缩小</string>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/minus.png</normaloff>:/new/prefix1/images/minus.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_deleteGL_2">
+       <property name="text">
+        <string>清除</string>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/delete.png</normaloff>:/new/prefix1/images/delete.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_8">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QPushButton" name="pushButton_left_1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe 宋体 Std L</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/left.png</normaloff>:/new/prefix1/images/left.png</iconset>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_right_1">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/right.png</normaloff>:/new/prefix1/images/right.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_9">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>450</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QPushButton" name="pushButton_left_2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/left.png</normaloff>:/new/prefix1/images/left.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_right_2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="MainWindow.qrc">
+         <normaloff>:/new/prefix1/images/right.png</normaloff>:/new/prefix1/images/right.png</iconset>
+       </property>
+       <property name="autoRepeat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1231</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionload"/>
+    <addaction name="actionchange_model"/>
+    <addaction name="save_model"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionBFM"/>
+    <addaction name="action_MVIC"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>模型</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="actionload">
+   <property name="text">
+    <string>载入模型</string>
+   </property>
+  </action>
+  <action name="actionchange_model">
+   <property name="text">
+    <string>更换模型</string>
+   </property>
+  </action>
+  <action name="actionBFM">
+   <property name="text">
+    <string>BFM模型预处理</string>
+   </property>
+  </action>
+  <action name="save_model">
+   <property name="text">
+    <string>导出模型</string>
+   </property>
+  </action>
+  <action name="action_MVIC">
+   <property name="text">
+    <string>关于面向医疗产业的三维人脸重建及变形软件</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">OpenGLWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MainWindow.qrc"/>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

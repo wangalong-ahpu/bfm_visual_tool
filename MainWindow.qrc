@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/QtTest"/>
+    <qresource prefix="/D:/database/bfm/2017"/>
+    <qresource prefix="/D:/HDF5/1.12.2/include"/>
+    <qresource prefix="/new/prefix1">
+        <file>images/001.GIF</file>
+        <file>images/logo.png</file>
+        <file>images/wal2.jpg</file>
+        <file>images/5.ico</file>
+        <file>images/Movie Clip.ico</file>
+        <file>images/Recycle Bin empty.ico</file>
+        <file>images/begin.png</file>
+        <file>images/cam.png</file>
+        <file>images/cancel.png</file>
+        <file>images/edit.png</file>
+        <file>images/edit1.png</file>
+        <file>images/laji.png</file>
+        <file>images/open.png</file>
+        <file>images/pic.png</file>
+        <file>images/save.png</file>
+        <file>images/wait.png</file>
+        <file>images/change.png</file>
+        <file>images/gen.png</file>
+        <file>images/option.png</file>
+        <file>images/add.png</file>
+        <file>images/cam2.png</file>
+        <file>images/settings.png</file>
+        <file>images/yes.png</file>
+        <file>images/background.png</file>
+        <file>images/etzhong.png</file>
+        <file>images/pc.png</file>
+        <file>images/tishi2.png</file>
+        <file>images/3dscan.jpg</file>
+        <file>images/message.png</file>
+        <file>images/delete.png</file>
+        <file>images/minus.png</file>
+        <file>images/plus.png</file>
+        <file>images/left.png</file>
+        <file>images/right.png</file>
+        <file>images/katong.png</file>
+    </qresource>
+</RCC>
